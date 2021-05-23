@@ -1,5 +1,5 @@
 {
-  "name": "livecoding-express-node-mongo",
+  "name": "expert-workshop-testing-back",
   "version": "1.0.0",
   "description": "Un super projet qu'il est bien, achète !",
   "main": "src/index.js",
