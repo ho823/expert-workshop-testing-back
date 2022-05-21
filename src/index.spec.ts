@@ -13,8 +13,8 @@ const GET_ALL_WILDERS = gql`{getAllWilders{id, name, city}}`;
 describe(
     "test suite", 
     ()=>{
-        var apollo:ApolloServer|null = null;
-        var mongo:MongoMemoryServer = new MongoMemoryServer();
+        let apollo:ApolloServer|null = startServer(config);
+        let mongo:MongoMemoryServer = new MongoMemoryServer();
 
         beforeAll(
             async ()=>{
@@ -22,7 +22,6 @@ describe(
                 // mongo = new MongoMemoryServer();
                 // config.uri = await mongo.getUri();
                 
-                apollo = await startServer(config);
             }
         ); 
 
